@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { HeroSequence } from "./HeroSequence";
 import { track } from "./Analytics";
 import { useContext, useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
@@ -135,20 +136,15 @@ function HomeHero() {
             Research-stage concept · No autonomous fund movement
           </div>
         </div>
-        <motion.div
-          className="hero-product"
-          initial={false}
-          animate={paused ? {} : { y: [0, -6, 0] }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        >
+        <div className="hero-product">
           <div className="hero-product-label">
             <span className="tiny-dot" /> A closer look at the daily close
           </div>
-          <PositionCard compact />
+          <HeroSequence><PositionCard compact /></HeroSequence>
           <Link href="/demo" className="product-caption">
             Follow the $8,000 difference <Icon name="arrow" size={16} />
           </Link>
-        </motion.div>
+        </div>
         <a className="scroll-cue" href="#the-difference">
           <span>Scroll to see the evidence</span>
           <span>↓</span>

@@ -1,0 +1,69 @@
+{
+  "checks": [
+    {
+      "name": "Sequence starts while visible",
+      "pass": true
+    },
+    {
+      "name": "Advances to variance chapter",
+      "pass": true
+    },
+    {
+      "name": "Advances to held review",
+      "pass": true
+    },
+    {
+      "name": "Values stay present",
+      "pass": true
+    },
+    {
+      "name": "Manual selection works",
+      "pass": true
+    },
+    {
+      "name": "Keyboard focus suspends auto advance",
+      "pass": true
+    },
+    {
+      "name": "Global pause stops sequence",
+      "pass": true
+    },
+    {
+      "name": "775 no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "775 source labels fit",
+      "pass": true
+    },
+    {
+      "name": "390 no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "390 source labels fit",
+      "pass": true
+    },
+    {
+      "name": "320 no horizontal page overflow",
+      "pass": true
+    },
+    {
+      "name": "320 source labels fit",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion sequence is static",
+      "pass": true
+    },
+    {
+      "name": "Offscreen sequence is suspended",
+      "pass": true
+    },
+    {
+      "name": "No browser errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}
