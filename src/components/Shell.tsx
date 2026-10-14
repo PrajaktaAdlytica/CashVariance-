@@ -10,6 +10,16 @@ export function Header() {
   const [menu, setMenu] = useState(false),
     [mobile, setMobile] = useState(false);
   const path = usePathname();
+  const [pastIntro,setPastIntro]=useState(false);
+  const introHidden=path === "/" && !pastIntro;
+  useEffect(()=>{
+    const update=()=>{
+      const intro=document.querySelector(".intro-film");
+      setPastIntro(!intro || intro.getBoundingClientRect().bottom<=Math.max(130,(root.current?.offsetHeight ?? 88)+48));
+    };
+    update();window.addEventListener("scroll",update,{passive:true});window.addEventListener("resize",update);
+    return()=>{window.removeEventListener("scroll",update);window.removeEventListener("resize",update)};
+  },[path]);
   const { scrollYProgress } = useScroll();
   const { paused, reduced, toggle } = useContext(MotionContext);
   const trigger = useRef<HTMLButtonElement>(null);
@@ -77,7 +87,7 @@ export function Header() {
       <a href="#main" className="skip">
         Skip to content
       </a>
-      <header className="site-header" ref={root}>
+      <header className={`site-header${path === "/" ? " intro-aware" : ""}`} data-intro-hidden={introHidden} aria-hidden={introHidden || undefined} inert={introHidden} ref={root}>
         <div className="nav-wrap">
           <Link href="/" aria-label="CashVariance home" className="logo">
             <img

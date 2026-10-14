@@ -14,7 +14,7 @@ function Timeline({player, ready}:{player:RefObject<PlayerRef|null>;ready:boolea
   current.addEventListener("frameupdate",update);update();
   return()=>current.removeEventListener("frameupdate",update);
  },[player,ready]);
- return <div className="intro-timeline"><span aria-hidden="true">0{Math.min(3,Math.floor(frame/180)+1)} / 03</span><input aria-label="Intro timeline" type="range" min={0} max={INTRO_FRAMES-1} value={frame} aria-valuetext={`${Math.floor(frame/INTRO_FPS)} of 18 seconds`} onChange={e=>player.current?.seekTo(Number(e.target.value))}/><span aria-hidden="true">{String(Math.floor(frame/INTRO_FPS)).padStart(2,"0")} / 18s</span></div>;
+ return <div className="intro-timeline"><span aria-hidden="true">0{Math.min(3,Math.floor(frame/120)+1)} / 03</span><input aria-label="Intro timeline" type="range" min={0} max={INTRO_FRAMES-1} value={frame} aria-valuetext={`${Math.floor(frame/INTRO_FPS)} of 12 seconds`} onChange={e=>player.current?.seekTo(Number(e.target.value))}/><span aria-hidden="true">{String(Math.floor(frame/INTRO_FPS)).padStart(2,"0")} / 12s</span></div>;
 }
 export default function IntroFilm() {
  const player=useRef<PlayerRef>(null);
@@ -28,6 +28,16 @@ export default function IntroFilm() {
  const [playing,setPlaying]=useState(false);
  const [ended,setEnded]=useState(false);
  const [failed,setFailed]=useState(false);
+ const completed=useRef(false);
+ const inView=useRef(visible);inView.current=visible;
+ useEffect(()=>{
+  if(!ended || completed.current)return;
+  completed.current=true;
+  if(!inView.current)return;
+  const hero=document.getElementById("cashvariance-hero");
+  hero?.scrollIntoView({behavior:paused?"instant":"smooth",block:"start"});
+  hero?.focus({preventScroll:true});
+ },[ended,paused]);
  useEffect(()=>{
   const media=matchMedia("(max-width: 600px)");
   const resize=()=>setPortrait(media.matches);resize();media.addEventListener("change",resize);
@@ -36,6 +46,9 @@ export default function IntroFilm() {
   if(root.current)observer.observe(root.current);
   let active=true;
   Promise.all([
+   ...["approach","detail","hold"].map(name=>new Promise<void>(resolve=>{
+    const image=new Image();image.onload=()=>{image.decode().catch(()=>{}).finally(resolve)};image.onerror=()=>resolve();image.src=`/intro/${name}.webp`;
+   })),
    loadFont({family:"Newsreader",url:"/brand/fonts/Newsreader[opsz,wght].woff2",weight:"400"}),
    loadFont({family:"Manrope",url:"/brand/fonts/Manrope[wght].woff2",weight:"400"}),
    loadFont({family:"Plex",url:"/brand/fonts/IBMPlexMono-Regular.woff2"}),
@@ -60,15 +73,15 @@ export default function IntroFilm() {
   hero?.scrollIntoView({behavior:paused?"instant":"smooth",block:"start"});
   hero?.focus({preventScroll:true});
  };
- const replay=()=>{setEnded(false);setUserPaused(false);player.current?.seekTo(0);if(!paused)player.current?.play()};
+ const replay=()=>{completed.current=false;setEnded(false);setUserPaused(false);player.current?.seekTo(0);if(!paused)player.current?.play()};
  const toggle=()=>{if(playing){setUserPaused(true);player.current?.pause()}else{if(ended)replay();else{setUserPaused(false);player.current?.play()}}};
  return <section ref={root} className="intro-film" aria-label="The Treasury Observatory — CashVariance concept introduction" data-intro-playing={playing}>
   <div className="intro-stage" aria-hidden="true">
    {ready && !reduced && !failed ? <Player ref={player} component={ObservatoryFilm} durationInFrames={INTRO_FRAMES} fps={INTRO_FPS} compositionWidth={portrait?1080:1920} compositionHeight={portrait?1440:1080} style={{width:"100%",height:"100%"}} controls={false} loop={false} autoPlay={false} initiallyMuted clickToPlay={false} doubleClickToFullscreen={false} moveToBeginningWhenEnded={false} errorFallback={()=> <IntroPoster/>}/> : <IntroPoster/>}
   </div>
-  <p className="sr-only">An eighteen-second fictional observatory film. A bank statement shows $240,000; the ledger shows $232,000. The source is stale. The $8,000 difference stays unexplained and held for human review. No journal or payment is sent.</p>
+  <p className="sr-only">An twelve-second fictional observatory film. A bank statement shows $240,000; the ledger shows $232,000. The source is stale. The $8,000 difference stays unexplained and held for human review. No journal or payment is sent.</p>
   <div className="intro-toolbar">
-   <div className="intro-film-name"><span>THE TREASURY OBSERVATORY</span><small>{reduced?"Reduced motion · Still preview":failed?"Still preview":ended?"Film complete · Explore the daily close below":"18-second concept film · Silent"}</small></div>
+   <div className="intro-film-name"><span>THE TREASURY OBSERVATORY</span><small>{reduced?"Reduced motion · Still preview":failed?"Still preview":ended?"Film complete · Explore the daily close below":"12-second concept film · Silent"}</small></div>
    {ready && !reduced && !failed && <Timeline player={player} ready={ready}/>}
    <div className="intro-actions">
     {ready && !reduced && !failed && <><button type="button" onClick={toggle} disabled={paused} aria-label={playing?"Pause intro":"Play intro"}>{paused?"Motion paused":playing?"Pause Ⅱ":"Play ▷"}</button><button type="button" onClick={replay} disabled={paused} aria-label="Replay intro">Replay ↻</button></>}

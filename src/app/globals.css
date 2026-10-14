@@ -3748,3 +3748,8 @@ body[data-paused="true"] *:after,
  .intro-actions .intro-skip { margin-left:auto; }
 }
 .intro-film > .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+/* The film owns the opening viewport; navigation returns over the main hero. */
+.site-header.intro-aware { position:fixed; top:0; left:0; right:0; transition:opacity .25s,transform .25s,visibility .25s; }
+.site-header.intro-aware[data-intro-hidden="true"] { opacity:0; visibility:hidden; transform:translateY(-100%); pointer-events:none; }
+@media(prefers-reduced-motion:reduce) { .site-header.intro-aware { transition:none; } }

@@ -1,0 +1,109 @@
+{
+  "checks": [
+    {
+      "name": "All three scene textures ready",
+      "pass": true
+    },
+    {
+      "name": "Navbar hidden and inert during intro",
+      "pass": true
+    },
+    {
+      "name": "Film begins at viewport top",
+      "pass": true
+    },
+    {
+      "name": "Timeline is 12 seconds",
+      "pass": true
+    },
+    {
+      "name": "Pause stops time",
+      "pass": true
+    },
+    {
+      "name": "Frame 113 has an opaque loaded scene",
+      "pass": true
+    },
+    {
+      "name": "Frame 119 has an opaque loaded scene",
+      "pass": true
+    },
+    {
+      "name": "Frame 125 has an opaque loaded scene",
+      "pass": true
+    },
+    {
+      "name": "Frame 233 has an opaque loaded scene",
+      "pass": true
+    },
+    {
+      "name": "Frame 239 has an opaque loaded scene",
+      "pass": true
+    },
+    {
+      "name": "Frame 245 has an opaque loaded scene",
+      "pass": true
+    },
+    {
+      "name": "Completion automatically focuses hero",
+      "pass": true
+    },
+    {
+      "name": "Navbar returns after completion",
+      "pass": true
+    },
+    {
+      "name": "Final frame held at 359",
+      "pass": true
+    },
+    {
+      "name": "Navbar hides again on intro",
+      "pass": true
+    },
+    {
+      "name": "Replay starts again",
+      "pass": true
+    },
+    {
+      "name": "775px no overflow",
+      "pass": true
+    },
+    {
+      "name": "775px skip reveals navbar",
+      "pass": true
+    },
+    {
+      "name": "390px no overflow",
+      "pass": true
+    },
+    {
+      "name": "390px skip reveals navbar",
+      "pass": true
+    },
+    {
+      "name": "320px no overflow",
+      "pass": true
+    },
+    {
+      "name": "320px skip reveals navbar",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion static poster",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion skip works",
+      "pass": true
+    },
+    {
+      "name": "Product navbar unaffected",
+      "pass": true
+    },
+    {
+      "name": "No browser errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}

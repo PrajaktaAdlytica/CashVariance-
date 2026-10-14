@@ -17,13 +17,18 @@ void main(){
   float center=aspect<1.4 ? .68 : .5;
   vec2 p=(uv-.5)*crop/zoom+vec2(center+pan,.5);
   p=clamp(p,vec2(.001),vec2(.999));
-  vec3 original=texture2D(image,p).rgb;
+  // Drift actual cloud detail inside the open sky, feathered away from architecture.
+  float roof=.09+p.x*.29;
+  float sky=band(.12,shot==1. ? .40 : .67,.045,p.x)*band(roof+.025,.435,.045,p.y);
+  vec2 cloudDrift=vec2(time*.006,sin(time*.8+p.x*5.)*.0018)*sky;
+  vec2 atmosphere=clamp(p+cloudDrift,vec2(.001),vec2(.999));
+  vec3 original=texture2D(image,atmosphere).rgb;
   // Confine motion to the distant estuary. Neither console nor instruments warp.
   float water=band(.18,shot==1. ? .42 : .63,.045,p.x)*band(shot==1. ? .47 : .50,shot==1. ? .70 : .66,.025,p.y);
   float brightness=dot(original,vec3(.299,.587,.114));
   water*=smoothstep(.30,.60,brightness);
   vec2 ripple=vec2(sin(p.y*310.+time*1.6)*.0009, sin(p.x*190.-time*1.3)*.00045)*water;
-  vec3 color=texture2D(image,clamp(p+ripple,vec2(.001),vec2(.999))).rgb;
+  vec3 color=texture2D(image,clamp(atmosphere+ripple,vec2(.001),vec2(.999))).rgb;
   float glint=sin(p.x*330.+p.y*190.-time*1.8)*sin(p.y*410.+time*.9);
   color+=vec3(.018,.014,.008)*glint*water;
   // Slow broad mist bands, drifting independently from camera motion.
@@ -40,8 +45,8 @@ export function WaterScene({ shot, src }: { shot: number; src: string }) {
   const { fps, width, height } = useVideoConfig();
   const portrait = height > width;
   const seconds = frame / fps;
-  const zoom = interpolate(frame, [0, 5.4 * fps], shot === 2 ? [1.09, 1.015] : shot === 1 ? [1.025, 1.07] : [1.01, 1.10], { extrapolateRight: "clamp", easing: Easing.bezier(.3, 0, .25, 1) });
-  const pan = interpolate(frame, [0, 6 * fps], shot === 1 ? [0, .008] : [0, -.006], { extrapolateRight: "clamp" });
+  const zoom = interpolate(frame, [0, 3.4 * fps], shot === 2 ? [1.09, 1.015] : shot === 1 ? [1.025, 1.07] : [1.01, 1.10], { extrapolateRight: "clamp", easing: Easing.bezier(.3, 0, .25, 1) });
+  const pan = interpolate(frame, [0, 4 * fps], shot === 1 ? [0, .008] : [0, -.006], { extrapolateRight: "clamp" });
   const canvas = useRef<HTMLCanvasElement>(null);
   const renderer = useRef<Renderer | null>(null);
   const current = useRef({ seconds, zoom, pan });
