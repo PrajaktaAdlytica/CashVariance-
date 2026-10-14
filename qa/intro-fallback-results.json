@@ -1,0 +1,38 @@
+[
+  {
+    "name": "approach mobile heading stays inside frame",
+    "pass": true
+  },
+  {
+    "name": "detail mobile heading stays inside frame",
+    "pass": true
+  },
+  {
+    "name": "hold mobile heading stays inside frame",
+    "pass": true
+  },
+  {
+    "name": "Screen-reader summary visually hidden",
+    "pass": true
+  },
+  {
+    "name": "Playback ends without looping",
+    "pass": true
+  },
+  {
+    "name": "Final copy holds at full opacity",
+    "pass": true
+  },
+  {
+    "name": "WebGL-unavailable image fallback is visible",
+    "pass": true
+  },
+  {
+    "name": "Fallback has no browser errors",
+    "pass": true
+  },
+  {
+    "name": "Fallback keeps skip working",
+    "pass": true
+  }
+]

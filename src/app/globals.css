@@ -3706,3 +3706,45 @@ body[data-paused="true"] *:after,
 @media (prefers-reduced-motion: reduce) {
   .hero-sequence * { animation: none !important; transition: none !important; }
 }
+
+/* Cinematic intro: a Remotion player above the existing hero. */
+.intro-film { background: #26372f; color: #f6f2e9; }
+.intro-stage { width: 100%; aspect-ratio: 16/9; position: relative; overflow: hidden; }
+.intro-stage h2 { max-width: none; }
+.intro-poster { width: 100%; height: 100%; position: relative; overflow: hidden; background: #26372f; }
+.intro-poster > img { width: 100%; height: 100%; object-fit: cover; }
+.intro-poster:after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,#191d19a6,transparent 78%); }
+.intro-poster-copy { position:absolute; z-index:1; left:6%; top:28%; max-width:46%; color:#fff9ed; }
+.intro-poster-copy > span { font:10px var(--font-data); letter-spacing:.14em; }
+.intro-poster-copy h2 { font:400 clamp(26px,5.7vw,100px)/1.05 var(--font-display); letter-spacing:-.035em; margin:22px 0; }
+.intro-poster-copy p { font-size:clamp(11px,1.6vw,25px); }
+.intro-toolbar { min-height:86px; padding:17px max(24px,4vw); display:flex; align-items:center; justify-content:space-between; gap:25px; background:#23352d; border-top:1px solid #dcd3bb33; }
+.intro-film-name > span { font:10px var(--font-data); letter-spacing:.12em; }
+.intro-film-name small { display:block; margin-top:5px; color:#cfdbd0; font-size:10px; }
+.intro-actions { display:flex; align-items:center; gap:8px; }
+.intro-actions button,.intro-skip { border:1px solid #d8ddce66; color:#f6f2e9; background:transparent; padding:12px 15px; font-size:11px; border-radius:4px; white-space:nowrap; }
+.intro-actions button:hover:not(:disabled) { background:#ffffff14; }
+.intro-actions button:focus-visible,.intro-timeline input:focus-visible { outline:2px solid #f1c47e; outline-offset:4px; }
+.intro-actions button:disabled { opacity:.6; }
+.intro-actions .intro-skip,.intro-skip { background:#f6f2e9; color:#29241e; }
+.intro-actions .intro-skip:hover { background:#e9deca; }
+.intro-timeline { display:flex; align-items:center; gap:12px; max-width:290px; flex:1; font:9px var(--font-data); white-space:nowrap; }
+.intro-timeline input { width:100%; min-width:70px; height:20px; accent-color:#d1af7d; cursor:pointer; }
+.home-hero:focus { outline:none; }
+@media(max-width:1000px) { .intro-toolbar { flex-wrap:wrap; gap:14px; }.intro-timeline { max-width:220px; }.intro-film-name{flex:1;}.intro-actions{margin-left:auto;} }
+@media(max-width:600px) {
+ .intro-stage { aspect-ratio:3/4; }
+ .intro-poster > img { height:68%; object-position:68% center; }
+ .intro-poster:after { background:linear-gradient(180deg,transparent 42%,#26372f 68%); }
+ .intro-poster-copy { top:69%; left:6%; max-width:88%; }
+ .intro-poster-copy > span { font-size:7px; }
+ .intro-poster-copy h2 { font-size:30px; margin:10px 0; }
+ .intro-poster-copy p { font-size:11px; margin:0; }
+ .intro-toolbar { padding:16px 20px; gap:15px; }
+ .intro-film-name { min-width:100%; }
+ .intro-timeline { max-width:none; min-width:100%; }
+ .intro-actions { width:100%; margin:0; }
+ .intro-actions button { padding:11px 12px; }
+ .intro-actions .intro-skip { margin-left:auto; }
+}
+.intro-film > .sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }

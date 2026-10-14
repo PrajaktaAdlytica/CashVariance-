@@ -1,5 +1,8 @@
 "use client";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import { IntroLoading } from "./IntroPoster";
+const IntroFilm = dynamic(() => import("./IntroFilm"), { ssr: false, loading: IntroLoading });
 import { HeroSequence } from "./HeroSequence";
 import { track } from "./Analytics";
 import { useContext, useEffect, useRef, useState } from "react";
@@ -95,7 +98,7 @@ function HomeHero() {
   });
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "12%"]);
   return (
-    <section className="home-hero" ref={ref}>
+    <section className="home-hero" id="cashvariance-hero" tabIndex={-1} ref={ref}>
       <motion.div className="hero-background" style={{ y: paused ? 0 : y }}>
         <img
           src="/brand/backgrounds/ochre-current.webp"
@@ -395,6 +398,7 @@ const faqs = [
 export default function Home() {
   return (
     <>
+      <IntroFilm />
       <HomeHero />
       <section className="audience-strip">
         <div className="container">

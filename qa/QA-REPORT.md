@@ -45,3 +45,11 @@ Recomposed the shared SVG with a separate result-label column, receipt assumptio
 ### Hero reconciliation sequence — 14 October 2026
 Replaced the floating-only hero card with three timed chapters: compare source records, trace the $8,000 variance, and hold for reviewer confirmation. Added source tiles, animated converging paths, a comparison scan, variance emphasis, reviewer emphasis, layered card framing, and selectable chapter controls. Financial values, stale warning, synthetic labels, and held status remain visible and unchanged. Motion suspends offscreen, in a hidden tab, during keyboard interaction, with global pause, and for reduced motion.
 Production build passed. All 16 focused checks passed at desktop, 775px, 390px and 320px; reviewed desktop and mobile captures. Full site suite passed 94 checks across 25 routes.
+
+### Observatory intro — 14 October 2026
+Added an 18-second Remotion / React / WebGL intro above the original homepage hero. Desktop and dedicated portrait compositions use three approved generated scenes and accurate synthetic overlay labels. Native hero and offer behavior remain intact. Independent shader water/mist motion avoids instruments and foreground architecture.
+- Production build passed.
+- 19 intro checks passed: autoplay, pause freezes timeline and shader, three-scene seeking, held end-state, replay, global pause, skip focus, viewport widths 775/390/320, reduced-motion poster, offscreen suspension and browser errors.
+- 9 additional checks passed: all mobile headings contained, screen-reader summary hidden, once-only ending with fully visible final text, WebGL-disabled image fallback, fallback error-free behavior and skip.
+- Existing site suite: all 94 checks across 25 routes passed.
+- Reviewed desktop and mobile stills. Remotion Studio is separately checked to load the composition and WebGL scene. No MP4 was requested or rendered.

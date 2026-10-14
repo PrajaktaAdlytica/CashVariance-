@@ -24,3 +24,6 @@ Do not recolor third-party marks ochre or animate their shapes. The research did
 No competitor logos or UI screens are included as CashVariance customer, integration or partner evidence.
 
 Map land outlines: Natural Earth 1:110m land dataset (public domain), retrieved from the project repository. Entity locations are illustrative. Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson ; terms: https://www.naturalearthdata.com/about/terms-of-use/
+
+OBSERVATORY INTRO
+public/intro/{approach,detail,hold}.webp — derived by format compression from the three original CashVariance observatory images generated with built-in ImageGen in this chat. No competitor artwork reused. Existing first-party logo and bundled local fonts remain separate overlays. Instrument markings are decorative; synthetic financial values are authored text overlays. Intro source uses remotion, @remotion/player, @remotion/fonts and development-only @remotion/cli (4.0.535); their upstream package license terms apply.

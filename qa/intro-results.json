@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "name": "Autoplays when visible",
+      "pass": true
+    },
+    {
+      "name": "Pause freezes timeline",
+      "pass": true
+    },
+    {
+      "name": "Pause freezes shader",
+      "pass": true
+    },
+    {
+      "name": "Seek reaches approach",
+      "pass": true
+    },
+    {
+      "name": "Seek reaches detail",
+      "pass": true
+    },
+    {
+      "name": "Seek reaches hold",
+      "pass": true
+    },
+    {
+      "name": "Final scene retains held explanation",
+      "pass": true
+    },
+    {
+      "name": "Last frame keeps final title",
+      "pass": true
+    },
+    {
+      "name": "Replay returns to opening",
+      "pass": true
+    },
+    {
+      "name": "Global pause stops intro",
+      "pass": true
+    },
+    {
+      "name": "Skip focuses original hero",
+      "pass": true
+    },
+    {
+      "name": "Skip pauses intro",
+      "pass": true
+    },
+    {
+      "name": "775 no page overflow",
+      "pass": true
+    },
+    {
+      "name": "390 no page overflow",
+      "pass": true
+    },
+    {
+      "name": "320 no page overflow",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion shows poster",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion keeps skip",
+      "pass": true
+    },
+    {
+      "name": "Offscreen pauses intro",
+      "pass": true
+    },
+    {
+      "name": "No browser errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}
