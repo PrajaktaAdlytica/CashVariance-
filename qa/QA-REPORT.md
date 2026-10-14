@@ -32,3 +32,9 @@ The website suite still passes 94/94 checks and the demo suite 19/19. An additio
 ## Scroll-driven offer selection
 
 The five-offer explorer pins only when its full content fits beneath the header. Native page scrolling selects 01 through 05 and reverses on upward scrolling. Clicking a tab or using arrow/Home/End keys moves directly to its chapter. Mobile selection keeps the active tab in view. Short viewports use the complete unpinned tab interface, and reduced motion removes transitions without removing access to any offer. See `offers-scroll-results.json` for focused tests at the marked 775×804 viewport, desktop and mobile sizes.
+
+### Bidirectional section entrances — 14 October 2026
+- Alternating left/right, staggered Motion entrances replay on viewport reentry.
+- Content blocks animate independently; sticky offer/story containers remain unchanged.
+- Native scroll retained; pause, keyboard focus, and reduced motion settle readable content.
+- Production build passed. Site suite: 94 checks across 25 routes. Offer scrolling suite: 79 checks. New entrance suite: 8 checks covering down/up replay, final readability, both directions, pause reset, reduced motion, supporting pages, and mobile overflow.

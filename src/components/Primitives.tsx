@@ -16,6 +16,7 @@ import {
   useRef,
 } from "react";
 import art from "@/data/hero-art.json";
+import { ScrollEntrances } from "./ScrollEntrances";
 export const MotionContext = createContext({
   paused: false,
   reduced: false,
@@ -62,7 +63,10 @@ export function MotionProvider({ children }: { children: ReactNode }) {
         toggle: () => setPaused((p) => !p),
       }}
     >
-      <MotionConfig reducedMotion="user">{children}</MotionConfig>
+      <MotionConfig reducedMotion="user">
+        {children}
+        <ScrollEntrances disabled={paused || !!reduced} />
+      </MotionConfig>
     </MotionContext.Provider>
   );
 }
@@ -121,17 +125,10 @@ export function Reveal({
   className?: string;
   delay?: number;
 }) {
-  const { paused } = useContext(MotionContext);
   return (
-    <motion.div
-      className={className}
-      initial={false}
-      whileInView={paused ? {} : { opacity: [0.6, 1], y: [18, 0] }}
-      viewport={{ once: true, amount: 0.12 }}
-      transition={{ duration: 0.65, delay, ease: [0.2, 0.7, 0.2, 1] }}
-    >
+    <div className={className} data-reveal data-reveal-delay={delay}>
       {children}
-    </motion.div>
+    </div>
   );
 }
 export function Eyebrow({ children }: { children: ReactNode }) {

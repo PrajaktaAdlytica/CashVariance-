@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Scroll down triggers entrance",
+    "pass": true
+  },
+  {
+    "name": "Entrance settles fully readable",
+    "pass": true
+  },
+  {
+    "name": "Scroll up replays entrance",
+    "pass": true
+  },
+  {
+    "name": "Both left and right entrances assigned",
+    "pass": true
+  },
+  {
+    "name": "Pause clears entrance transforms",
+    "pass": true
+  },
+  {
+    "name": "Reduced motion has no entrances",
+    "pass": true
+  },
+  {
+    "name": "Supporting page columns animate",
+    "pass": true
+  },
+  {
+    "name": "Mobile has no horizontal overflow",
+    "pass": true
+  }
+]
