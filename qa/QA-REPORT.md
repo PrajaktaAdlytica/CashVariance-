@@ -38,3 +38,6 @@ The five-offer explorer pins only when its full content fits beneath the header.
 - Content blocks animate independently; sticky offer/story containers remain unchanged.
 - Native scroll retained; pause, keyboard focus, and reduced motion settle readable content.
 - Production build passed. Site suite: 94 checks across 25 routes. Offer scrolling suite: 79 checks. New entrance suite: 8 checks covering down/up replay, final readability, both directions, pause reset, reduced motion, supporting pages, and mobile overflow.
+
+### Cash Proof diagram label clearance — 14 October 2026
+Recomposed the shared SVG with a separate result-label column, receipt assumption above the paths, and two-line inputs beneath. Removed the native SVG hover tooltip while retaining an accessible description. Paths animate without moving labels. Production build passed; geometric checks at 1440, 775 and 390px on both homepage and product page found no path/text collisions (5-unit clearance), text clipping, or tooltip. Reviewed the mobile capture.

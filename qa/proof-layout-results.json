@@ -1,0 +1,44 @@
+[
+  {
+    "width": 1440,
+    "route": "/products/cash-proof/",
+    "collisions": [],
+    "outside": [],
+    "tooltip": false
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "collisions": [],
+    "outside": [],
+    "tooltip": false
+  },
+  {
+    "width": 775,
+    "route": "/products/cash-proof/",
+    "collisions": [],
+    "outside": [],
+    "tooltip": false
+  },
+  {
+    "width": 775,
+    "route": "/",
+    "collisions": [],
+    "outside": [],
+    "tooltip": false
+  },
+  {
+    "width": 390,
+    "route": "/products/cash-proof/",
+    "collisions": [],
+    "outside": [],
+    "tooltip": false
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "collisions": [],
+    "outside": [],
+    "tooltip": false
+  }
+]

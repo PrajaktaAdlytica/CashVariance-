@@ -1,1 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 410" role="img" aria-labelledby="title-cash-proof desc-cash-proof"><title id="title-cash-proof">See the assumption behind the alert.</title><desc id="desc-cash-proof">Two labeled scenarios reveal progressively; values are static and illustrative.</desc><style>:root{--paper:#F6F2E9;--soft:#E9DECA;--line:#BDB2A1;--accent:#754C26;--muted:#61594F;--warn:#8B570F;color:#29241E}text{font-family:Arial,sans-serif;fill:currentColor} .trace{stroke-dasharray:1000;animation:draw 4s ease-in-out infinite}.pulse{animation:pulse 4s ease-in-out infinite}.rise{animation:rise 5s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.route{animation:route 6s linear infinite}@keyframes draw{0%{stroke-dashoffset:200}60%,100%{stroke-dashoffset:0}}@keyframes pulse{0%,100%{opacity:.65}50%{opacity:1}}@keyframes rise{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}@keyframes route{to{stroke-dashoffset:-66}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}:root{--paper:#FFFDFA;--soft:#D8C2B9;--accent:#6E3D35;color:#29241E;}</style><rect width="600" height="410" fill="#ECE4E0"/><text x="28" y="30" font-size="12" >DEMO / USD / ASSUMPTIONS</text><path d="M65 70L65 300" stroke="var(--line)"/><path d="M65 300L560 300" stroke="var(--line)"/><path d="M65 90L230 140L395 205L550 250" fill="none" stroke="var(--accent)" stroke-width="3" class="trace"/><path d="M230 140L395 175L550 210" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="6 6"/><text x="76" y="70" font-size="15" >Starting GL $232,000</text><text x="320" y="190" font-size="13" >+$30,000 assumed receipt</text><text x="365" y="278" font-size="15" >No receipt: −$18,000</text><text x="365" y="230" font-size="15" >With receipt: $12,000</text><text x="65" y="335" font-size="13" >Planned outflows: $250,000 • buffer: $20,000</text><text x="24" y="395" font-size="10" >DEMO — SYNTHETIC DATA</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 410" role="img" aria-label="Cash Proof illustrative scenarios: starting GL 232,000 dollars, planned outflows 250,000 dollars. With an assumed 30,000 dollar receipt: 12,000 dollars. Without the receipt: negative 18,000 dollars." aria-describedby="desc-cash-proof">
+<desc id="desc-cash-proof">Synthetic scenario paths, not a time-series chart. Labels sit outside the plot and remain stationary while the paths reveal. Both outcomes are below the 20,000 dollar buffer.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#29241E}:root{--line:#BDB2A1;--accent:#6E3D35}</style>
+<rect width="600" height="410" fill="#ECE4E0"/>
+<text x="28" y="30" font-size="12">DEMO / USD / ASSUMPTIONS</text>
+<text x="28" y="77" font-size="16">Starting GL $232,000</text>
+<text x="205" y="112" font-size="13">+$30,000 assumed receipt</text>
+<path d="M40 98L40 300L350 300" fill="none" stroke="var(--line)"/>
+<path d="M40 105L150 160L260 235L350 270" fill="none" stroke="var(--accent)" stroke-width="3"/>
+<path d="M150 160L260 178L350 190" fill="none" stroke="var(--accent)" stroke-width="2"/>
+<text x="374" y="176" font-size="14">With receipt</text>
+<text x="374" y="201" font-size="20">$12,000</text>
+<text x="374" y="256" font-size="14">No receipt</text>
+<text x="374" y="281" font-size="20">−$18,000</text>
+<text x="28" y="336" font-size="14">Planned outflows: $250,000</text>
+<text x="28" y="360" font-size="14">Minimum buffer: $20,000 · Both scenarios below buffer</text>
+<text x="24" y="395" font-size="10">DEMO — SYNTHETIC DATA / ILLUSTRATIVE PATHS</text>
+</svg>
