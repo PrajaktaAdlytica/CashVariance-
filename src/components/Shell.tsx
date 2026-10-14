@@ -41,6 +41,37 @@ export function Header() {
       document.removeEventListener("pointerdown", click);
     };
   }, [menu, mobile]);
+  useEffect(() => {
+    let frame = 0;
+    const updateContrast = () => {
+      frame = 0;
+      const header = root.current;
+      if (!header) return;
+      const y = header.getBoundingClientRect().height / 2;
+      let surface = document.elementsFromPoint(innerWidth / 2, y).find(
+        el => el instanceof HTMLElement && !header.contains(el) && el !== header,
+      );
+      let dark = false;
+      while (surface) {
+        const channels = getComputedStyle(surface).backgroundColor.match(/[\d.]+/g)?.map(Number);
+        if (channels && channels.length >= 3 && (channels[3] ?? 1) > .5) {
+          dark = channels[0] * .2126 + channels[1] * .7152 + channels[2] * .0722 < 130;
+          break;
+        }
+        surface = surface.parentElement || undefined;
+      }
+      header.dataset.surface = dark ? "dark" : "light";
+    };
+    const schedule = () => { if (!frame) frame = requestAnimationFrame(updateContrast); };
+    schedule();
+    window.addEventListener("scroll", schedule, { passive: true });
+    window.addEventListener("resize", schedule);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", schedule);
+      window.removeEventListener("resize", schedule);
+    };
+  }, [path]);
   return (
     <>
       <a href="#main" className="skip">

@@ -316,9 +316,10 @@ select:focus-visible,
   position: sticky;
   top: 0;
   z-index: 70;
-  background: #f6f2e9f5;
+  background: transparent;
+  -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
-  border-bottom: 1px solid #d3cabc88;
+  border-bottom: 1px solid transparent;
 }
 .nav-wrap {
   height: 88px;
@@ -3088,8 +3089,8 @@ main {
   overflow: clip;
 }
 .site-header {
-  background: #ffffffed;
-  border-bottom-color: #ccd5ce99;
+  background: transparent;
+  border-bottom-color: transparent;
 }
 .mega-menu,
 .mobile-menu {
@@ -3637,3 +3638,9 @@ body[data-paused="true"] *:after,
   .offer-scroll .product-stage .hero-art svg { height:210px; max-height:210px; }
   .offer-scroll:not(.is-pinned) .product-stage { height:auto; min-height:540px; }
 }
+
+/* Transparent navigation adapts its foreground over dark page sections. */
+.site-header[data-surface="dark"] .nav-wrap { color: var(--ivory); }
+.site-header[data-surface="dark"] .logo img { filter: brightness(0) invert(1); }
+.site-header[data-surface="dark"] .nav-cta { background: var(--ivory); color: var(--ink); }
+.site-header .mega-menu, .site-header .mobile-menu { color: var(--ink); }
