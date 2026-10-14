@@ -4,7 +4,7 @@ import { loadFont } from "@remotion/fonts";
 import { useContext, useEffect, useRef, useState, RefObject } from "react";
 import { ObservatoryFilm, INTRO_FPS, INTRO_FRAMES } from "../remotion/ObservatoryFilm";
 import { MotionContext } from "./Primitives";
-import { IntroPoster } from "./IntroPoster";
+import { IntroPoster, scrollToMainHero } from "./IntroPoster";
 
 function Timeline({player, ready}:{player:RefObject<PlayerRef|null>;ready:boolean}) {
  const [frame,setFrame]=useState(0);
@@ -34,9 +34,7 @@ export default function IntroFilm() {
   if(!ended || completed.current)return;
   completed.current=true;
   if(!inView.current)return;
-  const hero=document.getElementById("cashvariance-hero");
-  hero?.scrollIntoView({behavior:paused?"instant":"smooth",block:"start"});
-  hero?.focus({preventScroll:true});
+  scrollToMainHero(paused);
  },[ended,paused]);
  useEffect(()=>{
   const media=matchMedia("(max-width: 600px)");
@@ -69,9 +67,7 @@ export default function IntroFilm() {
  },[ready,visible,hidden,paused,userPaused,ended,failed,reduced]);
  const skip=()=>{
   setUserPaused(true);player.current?.pause();
-  const hero=document.getElementById("cashvariance-hero");
-  hero?.scrollIntoView({behavior:paused?"instant":"smooth",block:"start"});
-  hero?.focus({preventScroll:true});
+  scrollToMainHero(paused);
  };
  const replay=()=>{completed.current=false;setEnded(false);setUserPaused(false);player.current?.seekTo(0);if(!paused)player.current?.play()};
  const toggle=()=>{if(playing){setUserPaused(true);player.current?.pause()}else{if(ended)replay();else{setUserPaused(false);player.current?.play()}}};
