@@ -1,0 +1,85 @@
+{
+  "url": "http://localhost:3000/demo/",
+  "timestamp": "2026-10-14T14:37:10.041Z",
+  "passed": 19,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Initial fixed 10-record arithmetic and persistent stale warning",
+      "status": "pass"
+    },
+    {
+      "name": "Queue search/filter and matched-record source inspection",
+      "status": "pass"
+    },
+    {
+      "name": "Reject false candidate TR-806 without reusing matched source",
+      "status": "pass"
+    },
+    {
+      "name": "Synthetic counterparty confirmation never changes observed balances",
+      "status": "pass"
+    },
+    {
+      "name": "Review requires reason and preserves unposted sources on override",
+      "status": "pass"
+    },
+    {
+      "name": "Cash outlook $232k − $250k = −$18k, $38k buffer gap",
+      "status": "pass"
+    },
+    {
+      "name": "Separate $30k receipt yields $12k and $8k buffer gap",
+      "status": "pass"
+    },
+    {
+      "name": "Receipt timing after horizon excluded; editable amount and starting balance recalculate",
+      "status": "pass"
+    },
+    {
+      "name": "Missing receipt date does not count an undated assumption",
+      "status": "pass"
+    },
+    {
+      "name": "Payment review evidence gate blocks both reviewers and execution",
+      "status": "pass"
+    },
+    {
+      "name": "Same reviewer cannot supply second acknowledgment",
+      "status": "pass"
+    },
+    {
+      "name": "Distinct reviewers complete review but execution remains disabled",
+      "status": "pass"
+    },
+    {
+      "name": "Changing file invalidates evidence and both prior approvals",
+      "status": "pass"
+    },
+    {
+      "name": "Close memo keeps synthetic labels, stale provenance, reject and override trail",
+      "status": "pass"
+    },
+    {
+      "name": "Keyboard tabs: arrow, Home and End move focus and activation",
+      "status": "pass"
+    },
+    {
+      "name": "Mobile 390px and 320px: each tab has no document overflow",
+      "status": "pass"
+    },
+    {
+      "name": "Reduced motion keeps tab contents complete and transitions disabled",
+      "status": "pass"
+    },
+    {
+      "name": "Reset restores deterministic original state",
+      "status": "pass"
+    },
+    {
+      "name": "No browser JavaScript errors",
+      "status": "pass"
+    }
+  ],
+  "errors": []
+}

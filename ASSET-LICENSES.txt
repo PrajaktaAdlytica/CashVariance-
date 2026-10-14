@@ -1,0 +1,26 @@
+CASHVARIANCE ASSET PROVENANCE
+
+Original project assets: redrawn CashVariance logo contours, original treasury line icons, diagram layouts, pattern tiles, page compositions, CSS and copy generated for this project. Logo wordmark outlines derive from Newsreader at weight 450 and optical size 48. Included vectors are editable paths, not embedded bitmap traces.
+
+Fonts: downloaded from the official Google Fonts repository on 14 October 2026. Original TTF files and converted WOFF2 files included with original SIL Open Font License notices. No font family was renamed; WOFF2 conversion changes format only. Keep notices when redistributing.
+https://github.com/google/fonts/tree/main/ofl/newsreader
+https://github.com/google/fonts/tree/main/ofl/manrope
+https://github.com/google/fonts/tree/main/ofl/ibmplexmono
+
+Background art: two newly generated raster illustrations produced with the built-in image-generation tool. PNG originals and WebP derivatives. They do not depict real company premises, team members or customers. The original generation prompts are in the accompanying CashVariance brand kit.
+
+LinkedIn and Crunchbase social symbols: unchanged geometry from Simple Icons v11.15.0. Simple Icons assets are distributed under CC0; brand names and marks remain their owners' trademarks, and that source license is not a grant of endorsement or trademark rights. The website retains these source assets, but does not render social-profile links until genuine profile URLs are supplied. No real company-profile destinations are supplied or fabricated. These assets are separate from the original CashVariance icon set.
+https://github.com/simple-icons/simple-icons/tree/11.15.0
+https://github.com/simple-icons/simple-icons/blob/11.15.0/LICENSE.md
+https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/linkedin.svg
+https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/crunchbase.svg
+Brand usage references:
+https://brand.linkedin.com/in-logo
+https://brand.linkedin.com/downloads
+https://about.crunchbase.com/press
+https://about.crunchbase.com/terms-of-service/crunchbase-standard-legal-terms-conditions
+Do not recolor third-party marks ochre or animate their shapes. The research did not establish permission for every custom standalone Crunchbase use; retain the source mark and confirm the intended profile-link use against its published terms before public deployment.
+
+No competitor logos or UI screens are included as CashVariance customer, integration or partner evidence.
+
+Map land outlines: Natural Earth 1:110m land dataset (public domain), retrieved from the project repository. Entity locations are illustrative. Source: https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson ; terms: https://www.naturalearthdata.com/about/terms-of-use/

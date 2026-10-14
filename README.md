@@ -1,0 +1,63 @@
+# CashVariance website
+
+A complete, scroll-based concept website built with Next.js, React, TypeScript and Motion for React. The selected Quiet Current identity combines Newsreader, Manrope and IBM Plex Mono with ivory, ochre, limestone, sage and forest surfaces.
+
+This is a research-stage website and isolated synthetic demo. It is not an operating treasury platform. No bank connections, bank/ERP writes, journal posting, payment execution, customer authentication or real lead delivery are implemented.
+
+## Run locally
+
+Use Node.js 22 or later.
+
+```sh
+npm ci
+npm run dev
+```
+
+Open http://localhost:3000. For a production-style static preview:
+
+```sh
+npm run build
+npm start
+```
+
+The production export is `out/`. The dependency-free local preview server serves that export and its branded 404 page. `PORT=3001 npm start` selects another port. `npm run typecheck` checks TypeScript.
+
+## Project structure
+
+- `src/app`: layout, routing, metadata, global responsive styles.
+- `src/components/Home.tsx`: scroll narrative, product tabs, pilot and FAQ.
+- `src/components/Pages.tsx`: complete product and supporting page layouts.
+- `src/components/Primitives.tsx`: reusable motion, buttons, icons and disclosures.
+- `src/components/TreasuryDemo.tsx`: deterministic fictional treasury workbench.
+- `src/components/Inquiry.tsx`: local inquiry drafts, validation and downloads.
+- `src/components/Analytics.tsx`: optional browser-only event adapter.
+- `src/data`: five product definitions, supporting content, first-party SVG artwork.
+- `public/brand`: vector logo, favicon, self-hosted fonts, icons, illustrations and textures.
+- `qa`: browser results and real browser screenshots.
+- `.openai/hosting.json`: existing private Sites project and static export configuration.
+
+## Motion and interaction
+
+Native scrolling preserves browser behavior. Motion provides section reveals, the hero's subtle depth, a scroll progress line, product tabs and accordion transitions. Inline SVG illustrations use restrained line tracing and movement. The navigation includes a global animation pause. System reduced-motion preferences disable decorative animation and smooth scrolling; the controls remain usable. No physics or 3D runtime is needed for this design.
+
+Keyboard support includes skip navigation, visible focus, Escape to dismiss navigation, arrow/Home/End tab navigation and native labeled form controls. Wide illustrations and comparison tables have contained scrolling on small screens.
+
+## Intentional preview boundaries
+
+Inquiry forms prepare an explicitly unsent text draft in browser memory. Nothing is sent or stored on a server; downloads require a deliberate click. Refreshing clears the form. A company contact endpoint, privacy handling and delivery confirmation are needed before enabling real submission.
+
+The sign-in page explains preview access and opens the demo without collecting credentials. No customer accounts are implied. LinkedIn and Crunchbase source icons are included, but the footer does not invent company profiles.
+
+Usage events are disabled by default and require the footer's session-only preference. They use a browser `CustomEvent`, not a remote collector. No form values or financial records are emitted. Valid source/campaign labels can accompany events after consent. See `BUILD-COVERAGE.md` for event definitions and reserved business events.
+
+Pilot prices are labeled hypotheses. There is no checkout. The demo's bank $240,000, GL $232,000 and $8,000 observed difference stay unchanged after an explanation or reviewer decision. A separate $12,000 payment-review scenario cannot execute.
+
+## Deployment and ownership
+
+The static export can be hosted by a static provider. This project is configured for its existing owner-private Sites preview. Reuse the project identifier in `.openai/hosting.json`; do not create duplicate Sites projects. A custom domain, public audience or separate Vercel deployment is not configured. Metadata remains `noindex` while this is a concept preview.
+
+Fonts and source artwork attribution are in `ASSET-LICENSES.txt`. Keep the font license files when redistributing. The accompanying CashVariance brand kit contains original design assets and guidance.
+
+## Verification
+
+Production build and TypeScript pass. Browser checks cover 25 routes at desktop, tablet and mobile sizes, interactions, synthetic demo state transitions and reduced motion. See `qa/QA-REPORT.md` and the JSON result files. These checks are not a claim of WCAG certification or a production security audit.

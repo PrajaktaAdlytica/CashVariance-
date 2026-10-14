@@ -1,0 +1,41 @@
+DEMO — SYNTHETIC DATA / CONCEPT PREVIEW
+CASHVARIANCE · MEMO-NQUS-20261012
+
+All organizations, people, documents, amounts and outcomes are fictional. Local illustrative review only.
+
+Entity: North Quay Group / NQ-US / USD
+Bank account: ••2317 / GL account: GL-61
+Date: 12 October 2026 / Simulated review: 10:00 UTC
+Bank and GL source cutoff: 08:00 UTC
+Expected bank update: 09:00 UTC — not received
+FRESHNESS: STALE. This is not a confirmed 10:00 cash position.
+
+Opening balance: $200,000 on each source
+10 bank transactions: +$40,000 / 9 matched GL transactions: +$32,000
+Observed bank balance: $240,000
+Observed GL balance: $232,000
+OBSERVED DIFFERENCE: +$8,000 (unchanged)
+TR-808: $8,000 receipt present in bank source; absent from GL.
+Explanation: Additional synthetic NQ-UK confirmation loaded; explanation accepted.
+Disposition: Reviewer override — proposed classification under review
+Journal J-DRAFT-808: HELD / UNPOSTED. Conditional debit cash GL-61 $8,000, credit intercompany receivable $8,000, subject to review.
+False candidate TR-806: Rejected; already matched to another source identity.
+
+Sources: ST-NQUS-20261012-0800 row 8; GL-NQUS-20261012-0800 (no TR-808 match); IC-NQ-808. All sources synthetic.
+Reviewer: Evan Cole (fictional)
+Review acknowledgment: Simulated acknowledgment recorded; not certification of a current reconciled position.
+Next action: 2026-10-12 11:00 UTC — seek fresh source and confirm accounting treatment.
+
+PAY-DEMO-01 v2: separate illustrative $12,000 file, excluded from position totals. 0/2 review acknowledgments. Execution unavailable.
+
+REVIEW HISTORY
+10:00 UTC · Mira Shah (fictional) opened the review. Source remains stale.
+10:00 UTC · Evan Cole (fictional) rejected TR-806: distinct source identity; already matched. No source was reused.
+10:00 UTC · Owen Reed (fictional) supplied IC-NQ-808 confirmation. Explanation accepted; treatment held for accounting review.
+10:00 UTC · Evan Cole (fictional): Reviewer override — proposed classification under review. Reason: Treat the candidate classification as disputed pending review. Next action: 2026-10-12 11:00 UTC.
+10:00 UTC · Evan Cole (fictional) acknowledged PAY-DEMO-01 v1. Execution remains unavailable.
+10:00 UTC · Lena Ortiz (fictional) acknowledged PAY-DEMO-01 v1. Execution remains unavailable.
+10:00 UTC · Synthetic payment file changed. Supporting evidence and both previous review acknowledgments were invalidated.
+
+No source values changed. No journal posted. No funds moved. No bank or ERP connection.
+DEMO — SYNTHETIC DATA / CONCEPT PREVIEW
