@@ -1,0 +1,115 @@
+{
+  "checks": [
+    {
+      "name": "Sign in visible at 320",
+      "pass": true
+    },
+    {
+      "name": "Navigation fits 320",
+      "pass": true
+    },
+    {
+      "name": "Access page fits 320",
+      "pass": true
+    },
+    {
+      "name": "Sign in visible at 390",
+      "pass": true
+    },
+    {
+      "name": "Navigation fits 390",
+      "pass": true
+    },
+    {
+      "name": "Access page fits 390",
+      "pass": true
+    },
+    {
+      "name": "Sign in visible at 768",
+      "pass": true
+    },
+    {
+      "name": "Navigation fits 768",
+      "pass": true
+    },
+    {
+      "name": "Access page fits 768",
+      "pass": true
+    },
+    {
+      "name": "Sign in visible at 1024",
+      "pass": true
+    },
+    {
+      "name": "Navigation fits 1024",
+      "pass": true
+    },
+    {
+      "name": "Access page fits 1024",
+      "pass": true
+    },
+    {
+      "name": "Sign in visible at 1200",
+      "pass": true
+    },
+    {
+      "name": "Navigation fits 1200",
+      "pass": true
+    },
+    {
+      "name": "Access page fits 1200",
+      "pass": true
+    },
+    {
+      "name": "Sign in visible at 1440",
+      "pass": true
+    },
+    {
+      "name": "Navigation fits 1440",
+      "pass": true
+    },
+    {
+      "name": "Access page fits 1440",
+      "pass": true
+    },
+    {
+      "name": "Diagram sequence changes over time",
+      "pass": true
+    },
+    {
+      "name": "Diagram text stays fully opaque",
+      "pass": true
+    },
+    {
+      "name": "Global pause stops node sequences",
+      "pass": true
+    },
+    {
+      "name": "Offscreen diagrams pause",
+      "pass": true
+    },
+    {
+      "name": "Reduced motion has complete static diagram",
+      "pass": true
+    },
+    {
+      "name": "Device preference prevents resume override",
+      "pass": true
+    },
+    {
+      "name": "Supporting sections use four distinct colors",
+      "pass": true
+    },
+    {
+      "name": "Main surface is no longer cream",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "passed": 27,
+  "failed": []
+}

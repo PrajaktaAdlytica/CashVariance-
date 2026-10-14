@@ -80,6 +80,9 @@ export function Header() {
             </Link>
           </nav>
           <div className="nav-actions">
+            <Link href="/sign-in" className="nav-sign-in">
+              Sign in
+            </Link>
             <Link href="/demo" className="nav-demo">
               Explore demo <Icon name="arrow-up-right" size={14} />
             </Link>
@@ -90,8 +93,20 @@ export function Header() {
               className="motion-control"
               onClick={toggle}
               disabled={reduced}
-              aria-label={reduced ? "Animations reduced by your device settings" : paused ? "Resume animations" : "Pause animations"}
-              title={reduced ? "Animations reduced by your device settings" : paused ? "Resume animations" : "Pause animations"}
+              aria-label={
+                reduced
+                  ? "Animations reduced by your device settings"
+                  : paused
+                    ? "Resume animations"
+                    : "Pause animations"
+              }
+              title={
+                reduced
+                  ? "Animations reduced by your device settings"
+                  : paused
+                    ? "Resume animations"
+                    : "Pause animations"
+              }
               aria-pressed={paused}
             >
               <Icon name={paused ? "play" : "pause"} size={15} />
@@ -176,6 +191,7 @@ export function Header() {
                 ["Controls", "/controls"],
                 ["About", "/about"],
                 ["Contact", "/contact"],
+                ["Sign in", "/sign-in"],
                 ["Explore demo", "/demo"],
                 ["Request diagnostic", "/request-diagnostic"],
               ].map(([t, h]) => (
@@ -222,7 +238,7 @@ const groups = [
       ["Evaluation method", "/resources/pilot-scorecard"],
       ["Data checklist", "/resources/data-checklist"],
       ["Research & sources", "/resources/research"],
-      ["Preview access", "/sign-in"],
+      ["Sign in", "/sign-in"],
     ],
   },
 ];

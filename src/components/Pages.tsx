@@ -144,6 +144,9 @@ export function ProductsPage() {
           decisions and evaluation question. Bundle only when the evidence
           supports it.
         </p>
+        <div className="catalog-hero-art theme-sage">
+          <HeroArt name="products" />
+        </div>
       </section>
       <section className="container catalog-grid">
         {products.map((p) => (
@@ -298,10 +301,10 @@ export function SupportingPage({
           </div>
         </section>
       )}
-      <section className="container support-content">
+      <section className="support-content">
         {p.sections.map((s) => (
-          <Reveal key={s.title}>
-            <article className="support-section">
+          <Reveal key={s.title} className="support-band">
+            <article className="container support-section">
               <div>
                 <Eyebrow>{s.label}</Eyebrow>
                 <h2>{s.title}</h2>

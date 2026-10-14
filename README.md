@@ -1,6 +1,6 @@
 # CashVariance website
 
-A complete, scroll-based concept website built with Next.js, React, TypeScript and Motion for React. The selected Quiet Current identity combines Newsreader, Manrope and IBM Plex Mono with ivory, ochre, limestone, sage and forest surfaces.
+A complete, scroll-based concept website built with Next.js, React, TypeScript and Motion for React. The selected Quiet Current identity combines Newsreader, Manrope and IBM Plex Mono with white, mineral grey, sage, clay and forest section surfaces, plus restrained ochre accents.
 
 This is a research-stage website and isolated synthetic demo. It is not an operating treasury platform. No bank connections, bank/ERP writes, journal posting, payment execution, customer authentication or real lead delivery are implemented.
 
@@ -38,7 +38,7 @@ The production export is `out/`. The dependency-free local preview server serves
 
 ## Motion and interaction
 
-Native scrolling preserves browser behavior. Motion provides section reveals, the hero's subtle depth, a scroll progress line, product tabs and accordion transitions. Inline SVG illustrations use restrained line tracing and movement. The navigation includes a global animation pause. System reduced-motion preferences disable decorative animation and smooth scrolling; the controls remain usable. No physics or 3D runtime is needed for this design.
+Native scrolling preserves browser behavior. Motion provides section reveals, the hero's subtle depth, a scroll progress line, product tabs and accordion transitions. All inline SVG illustrations use staggered source-node, connection-trace and evidence-hold sequences. Diagram labels remain opaque and financial amounts remain fixed. Home workbench, workflow icons, pilot calendar and control pictograms also have coordinated sequences. The navigation includes Sign in on desktop and mobile, plus a global animation pause. Sequences pause outside the viewport and when the document is hidden. System reduced-motion preferences disable decorative animation and smooth scrolling; the controls remain usable. No physics or 3D runtime is needed for this design.
 
 Keyboard support includes skip navigation, visible focus, Escape to dismiss navigation, arrow/Home/End tab navigation and native labeled form controls. Wide illustrations and comparison tables have contained scrolling on small screens.
 

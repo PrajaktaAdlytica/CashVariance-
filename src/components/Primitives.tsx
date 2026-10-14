@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   motion,
   AnimatePresence,
@@ -15,8 +16,13 @@ import {
   useRef,
 } from "react";
 import art from "@/data/hero-art.json";
-export const MotionContext = createContext({ paused: false, reduced: false, toggle: () => {} });
+export const MotionContext = createContext({
+  paused: false,
+  reduced: false,
+  toggle: () => {},
+});
 export function MotionProvider({ children }: { children: ReactNode }) {
+  const pathname = usePathname();
   const reduced = useReducedMotion();
   const [paused, setPaused] = useState(false);
   // Keep the server and first client render identical. CSS applies the system
@@ -26,6 +32,28 @@ export function MotionProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     document.body.dataset.paused = String(paused || reduced);
   }, [paused, reduced]);
+  useEffect(() => {
+    const visibility = () => {
+      document.body.dataset.hidden = String(document.hidden);
+    };
+    visibility();
+    document.addEventListener("visibilitychange", visibility);
+    const observer = new IntersectionObserver(
+      (entries) =>
+        entries.forEach((entry) =>
+          entry.target.classList.toggle("visual-in-view", entry.isIntersecting),
+        ),
+      { threshold: 0.12 },
+    );
+    const visuals = document.querySelectorAll(
+      ".position-card, .workflow-icon, .pilot-scorecard, .control-rows, .hero-background, .td-workbench",
+    );
+    visuals.forEach((el) => observer.observe(el));
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", visibility);
+    };
+  }, [pathname]);
   return (
     <MotionContext.Provider
       value={{
@@ -134,7 +162,8 @@ export function HeroArt({
   return (
     <div
       ref={ref}
-      className={`hero-art ${className}`}
+      className={`hero-art motion-sequence ${className}`}
+      data-visual={name}
       dangerouslySetInnerHTML={{
         __html: (art as Record<string, string>)[name] || art.products,
       }}

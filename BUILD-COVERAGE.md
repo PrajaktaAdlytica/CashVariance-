@@ -62,3 +62,7 @@ The only adapter is `cashvariance:analytics`, a local browser CustomEvent. It is
 Connect an approved inquiry delivery endpoint and real deletion/contact route; verify delivery and deduplication. Finalize company/profile information, actual pilot terms, privacy and security handling. Connect analytics only with a defined consent policy. Configure any requested custom domain and public hosting audience. Real payment, bank and ERP integrations are outside the concept scope.
 
 The pilot go/no-go decision still depends on treasurer-accepted exception closures against reviewed ground truth, review economics, false positives/omissions and treasury/security permission. Website polish is not evidence of demand or better exception closure.
+
+## Visual update
+
+Sign in is present in the shared desktop/mobile header and footer. The access page remains explicit about preview-only accounts. All SVG graphic compositions are prepared through `scripts/sequence-art.py` with staggered nodes and connection traces. Page backgrounds alternate white, sage, mineral grey, clay and forest; cream is retained only as a restrained brand accent. Global pause, offscreen pause, hidden-document pause and reduced-motion fallbacks apply to the sequences.

@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { products } from "@/data/products";
 import { supportPages } from "@/data/pages";
 import { ProductPage, ProductsPage, SupportingPage } from "@/components/Pages";
-import { Button, Eyebrow } from "@/components/Primitives";
+import { Button, Eyebrow, HeroArt } from "@/components/Primitives";
 import Inquiry from "@/components/Inquiry";
 import TreasuryDemo from "@/components/TreasuryDemo";
 const special = [
@@ -87,17 +87,29 @@ export default async function Page({
   if (key === "sign-in")
     return (
       <section className="access-page">
+        <div className="access-illustration theme-forest">
+          <div>
+            <Eyebrow>Evidence before action</Eyebrow>
+            <h2>
+              Every decision
+              <br />
+              starts with clarity.
+            </h2>
+          </div>
+          <HeroArt name="sign-in" />
+          <p>A read-only concept. Human authority throughout.</p>
+        </div>
         <div className="access-card">
           <img
             className="rise"
             src="/brand/logo/symbol-ink.svg"
             alt="CashVariance symbol"
           />
-          <Eyebrow>Concept preview access</Eyebrow>
+          <Eyebrow>Sign in / Concept preview</Eyebrow>
           <h1>
-            Clarity starts
+            Welcome to
             <br />
-            with a closer look.
+            CashVariance.
           </h1>
           <p>
             Customer accounts are not available. Explore the synthetic workflow

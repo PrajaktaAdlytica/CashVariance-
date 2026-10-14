@@ -2037,3 +2037,35 @@
 body[data-paused="true"] .td-workbench * {
   animation-play-state: paused !important;
 }
+
+/* Neutral white work surfaces distinguish source data from the sage page. */
+.td-workbench {
+  --td-paper: #f0f5f1;
+  --td-line: #cdd8d0;
+  --td-sage: #d9e8de;
+  background: #fff;
+}
+.td-workbench .td-position {
+  position: relative;
+}
+.td-workbench.visual-in-view .td-position:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 50px;
+  height: 2px;
+  background: #a57542;
+  animation: workflow-line 10s ease-in-out infinite;
+}
+.td-workbench .td-position:nth-child(2):after {
+  animation-delay: 1s;
+}
+.td-workbench .td-position:nth-child(3):after {
+  animation-delay: 2s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .td-workbench .td-position:after {
+    animation: none !important;
+  }
+}

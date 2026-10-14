@@ -3071,3 +3071,533 @@ body[data-paused="true"] *:before,
 .form-grid > div {
   min-width: 0;
 }
+
+/* Chapter surfaces: paper white, mineral, sage and clay replace repeated cream. */
+:root {
+  --paper: #ffffff;
+  --line: #c8d0ca;
+  --sage: #d8e5dc;
+  --mineral: #e6ece9;
+  --clay: #edddd5;
+  --soft-white: #f8faf8;
+}
+body {
+  background: var(--soft-white);
+}
+main {
+  overflow: clip;
+}
+.site-header {
+  background: #ffffffed;
+  border-bottom-color: #ccd5ce99;
+}
+.mega-menu,
+.mobile-menu {
+  background: #fff;
+}
+.nav-sign-in {
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 12px 0;
+  border-bottom: 1px solid transparent;
+}
+.nav-sign-in:hover,
+.nav-sign-in:focus-visible {
+  border-bottom-color: currentColor;
+}
+.audience-strip {
+  background: #fff;
+}
+.story-section {
+  background: #d7e3dc;
+}
+.workflow-section {
+  background: #e5ecea;
+}
+.controls-section {
+  background: #203e34;
+}
+.final-cta {
+  background: #bf9367;
+}
+.theme-sage {
+  --canvas: #d4e3d9;
+  --paper: #f8fcf9;
+  --soft: #b6cdbe;
+  --line: #b6c8ba;
+}
+.theme-limestone {
+  --canvas: #e3e9e5;
+  --paper: #fff;
+  --soft: #c9d6cd;
+  --line: #b8c6bc;
+}
+.theme-clay {
+  --canvas: #ecd9d0;
+  --paper: #fffaf7;
+  --soft: #d9bbae;
+  --line: #c7a99b;
+}
+.theme-ivory {
+  --canvas: #eff3f0;
+  --paper: #fff;
+  --soft: #dce6df;
+  --line: #bfcec4;
+}
+.theme-forest {
+  --canvas: #203e34;
+  --paper: #2c4c40;
+  --soft: #416757;
+  --line: #8ba494;
+}
+.page-hero:before {
+  opacity: 0.17;
+}
+.problem-section,
+.modules-section,
+.pilot-section,
+.faq-section,
+.product-detail,
+.product-evaluation,
+.product-faq,
+.form-page,
+.page-hero-center,
+.comparison {
+  position: relative;
+  isolation: isolate;
+}
+.problem-section:before,
+.modules-section:before,
+.pilot-section:before,
+.faq-section:before,
+.product-detail:before,
+.product-evaluation:before,
+.product-faq:before,
+.form-page:before,
+.page-hero-center:before,
+.comparison:before {
+  content: "";
+  position: absolute;
+  inset: 0 calc((100vw - 100%) / -2);
+  z-index: -1;
+  pointer-events: none;
+}
+.problem-section:before,
+.modules-section:before,
+.product-detail:before {
+  background: #fff;
+}
+.pilot-section:before,
+.product-evaluation:before {
+  background: #edddd5;
+}
+.faq-section:before,
+.product-faq:before,
+.comparison:before {
+  background: #e6ece9;
+}
+.faq-section {
+  padding-top: 80px;
+}
+.product-faq {
+  padding-top: 70px;
+}
+.comparison {
+  padding-top: 70px;
+}
+.form-page:before {
+  background: #dce8df;
+}
+.page-hero-center:before {
+  background: #e0e9e3;
+}
+.product-demo-band {
+  background: #d5e4da;
+}
+.support-content {
+  padding: 0;
+}
+.support-band {
+  background: #fff;
+}
+.support-band:nth-child(4n + 2) {
+  background: #e3ece6;
+}
+.support-band:nth-child(4n + 3) {
+  background: #edddd5;
+}
+.support-band:nth-child(4n + 4) {
+  background: #e6ece9;
+}
+.support-section {
+  border-bottom: 0;
+}
+.support-faq {
+  padding-top: 80px;
+}
+.form-banner {
+  background: #e6ece9;
+}
+.position-card,
+.pilot-scorecard {
+  background: #fff;
+}
+.position-foot,
+.variance-row,
+.calendar-grid > span {
+  background: #edf3ee;
+}
+.product-list button.active {
+  background: #d6e5da;
+}
+.resource-links > a {
+  background: #d6e5da;
+}
+.resource-links > a:nth-child(2) {
+  background: #edddd5;
+}
+.resource-links > a:nth-child(3) {
+  background: #e6ece9;
+}
+.demo-page {
+  background: #dce6df;
+}
+.catalog-hero-art {
+  max-width: 720px;
+  margin: 40px auto -10px;
+  padding: 20px 50px;
+  border: 1px solid #b9cbbf;
+  border-radius: 16px;
+  background: #d4e3d9;
+  text-align: left;
+}
+.catalog-hero-art .hero-art {
+  max-width: 600px;
+  margin: auto;
+}
+.access-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  padding: 0;
+  background: #fff;
+}
+.access-illustration {
+  background: var(--canvas);
+  color: var(--text);
+  padding: 70px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.access-illustration h2 {
+  font-size: clamp(38px, 4vw, 62px);
+}
+.access-illustration .hero-art {
+  margin: 30px 0;
+}
+.access-illustration > p {
+  font-size: 12px;
+  color: #cadbd0;
+}
+.access-card {
+  background: #fff;
+  border-radius: 0;
+  padding: 70px 40px;
+}
+.access-card > .small-note {
+  background: #e5eee8;
+  padding: 14px;
+  border-radius: 6px;
+}
+
+/* Sequences illuminate source nodes, trace relationships, then hold the evidence. */
+.motion-sequence .sequence-node {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: evidence-node 10s var(--ease) infinite;
+  animation-delay: var(--phase-delay, 0s);
+}
+.motion-sequence .sequence-connection {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+  animation: evidence-connection 10s ease-in-out infinite;
+  animation-delay: var(--phase-delay, 0.6s);
+}
+@keyframes evidence-node {
+  0%,
+  4% {
+    opacity: 1;
+    transform: translateY(4px);
+  }
+  15%,
+  72%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  87% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes evidence-connection {
+  0%,
+  5% {
+    stroke-dashoffset: 100;
+    opacity: 0.35;
+  }
+  30%,
+  80%,
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  92% {
+    stroke-dashoffset: 0;
+    opacity: 0.35;
+  }
+}
+.hero-background img {
+  animation: material-drift 18s ease-in-out infinite alternate;
+  transform-origin: 60% 50%;
+}
+@keyframes material-drift {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.055);
+  }
+}
+.position-card .freshness,
+.position-card .variance-row,
+.position-card .position-owner {
+  animation: evidence-emphasis 10s ease-in-out infinite;
+}
+.position-card .variance-row {
+  animation-delay: 2s;
+}
+.position-card .position-owner {
+  animation-delay: 4s;
+}
+@keyframes evidence-emphasis {
+  0%,
+  45%,
+  100% {
+    box-shadow: inset 3px 0 transparent;
+  }
+  12%,
+  30% {
+    box-shadow: inset 3px 0 #a57542;
+  }
+}
+.workflow-icon:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #50705d;
+  transform-origin: left;
+  animation: workflow-line 8s ease-in-out infinite;
+}
+.workflow-icon {
+  position: relative;
+}
+.workflow-steps > div:nth-child(2) .workflow-icon:after {
+  animation-delay: 1s;
+}
+.workflow-steps > div:nth-child(3) .workflow-icon:after {
+  animation-delay: 2s;
+}
+@keyframes workflow-line {
+  0%,
+  10% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  35%,
+  65% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  95%,
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+.calendar-grid > span {
+  animation: calendar-review 12s ease-in-out infinite;
+}
+.calendar-grid > span:nth-child(5n + 1) {
+  animation-delay: 0.3s;
+}
+.calendar-grid > span:nth-child(5n + 2) {
+  animation-delay: 0.9s;
+}
+.calendar-grid > span:nth-child(5n + 3) {
+  animation-delay: 1.5s;
+}
+.calendar-grid > span:nth-child(5n + 4) {
+  animation-delay: 2.1s;
+}
+.calendar-grid > span:nth-child(5n + 5) {
+  animation-delay: 2.7s;
+}
+@keyframes calendar-review {
+  0%,
+  50%,
+  100% {
+    border-color: #c8d0ca;
+  }
+  15%,
+  35% {
+    border-color: #50705d;
+    background: #dbe9df;
+  }
+}
+.control-rows > div .icon {
+  animation: control-focus 10s ease-in-out infinite;
+}
+.control-rows > div:nth-child(2) .icon {
+  animation-delay: 1s;
+}
+.control-rows > div:nth-child(3) .icon {
+  animation-delay: 2s;
+}
+.control-rows > div:nth-child(4) .icon {
+  animation-delay: 3s;
+}
+@keyframes control-focus {
+  0%,
+  70%,
+  100% {
+    opacity: 0.6;
+  }
+  15%,
+  40% {
+    opacity: 1;
+  }
+}
+body[data-hidden="true"] *,
+body[data-hidden="true"] *:before,
+body[data-hidden="true"] *:after,
+body[data-paused="true"] *,
+body[data-paused="true"] *:before,
+body[data-paused="true"] *:after,
+.motion-offscreen *,
+.position-card:not(.visual-in-view) *,
+.workflow-icon:not(.visual-in-view):after,
+.pilot-scorecard:not(.visual-in-view) *,
+.control-rows:not(.visual-in-view) *,
+.hero-background:not(.visual-in-view) img {
+  animation-play-state: paused !important;
+}
+@media (max-width: 1250px) and (min-width: 1101px) {
+  .nav-wrap {
+    gap: 18px;
+  }
+  .desktop-nav {
+    gap: 16px;
+  }
+  .nav-actions {
+    gap: 12px;
+  }
+  .logo img {
+    width: 175px;
+  }
+  .nav-demo {
+    display: none;
+  }
+}
+@media (max-width: 680px) {
+  .nav-sign-in {
+    font-size: 10px;
+    padding: 8px 4px;
+  }
+  .nav-actions {
+    gap: 3px;
+  }
+  .access-page {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .access-illustration {
+    padding: 40px 25px 20px;
+  }
+  .access-illustration h2 {
+    font-size: 36px;
+  }
+  .access-illustration .hero-art {
+    max-width: 330px;
+    margin: 5px auto;
+  }
+  .access-illustration > p {
+    display: none;
+  }
+  .access-card {
+    padding: 45px 25px;
+    width: 100%;
+  }
+  .catalog-hero-art {
+    padding: 20px 5px;
+  }
+  .catalog-hero-art .hero-art {
+    overflow: auto;
+  }
+  .catalog-hero-art svg {
+    min-width: 500px;
+  }
+  .faq-section,
+  .support-faq,
+  .product-faq,
+  .comparison {
+    padding-top: 50px;
+  }
+  .form-intro .hero-art {
+    display: block;
+    max-width: 300px;
+    margin: 25px auto 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-sequence .sequence-node,
+  .motion-sequence .sequence-connection {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+    stroke-dashoffset: 0;
+  }
+  .hero-background img,
+  .position-card *,
+  .workflow-icon:after,
+  .calendar-grid > span,
+  .control-rows .icon {
+    animation: none !important;
+  }
+}
+
+.motion-sequence .sequence-node > rect {
+  animation: node-outline 10s ease-in-out infinite;
+  animation-delay: var(--phase-delay, 0s);
+}
+@keyframes node-outline {
+  0%,
+  50%,
+  100% {
+    stroke-width: 1;
+  }
+  15%,
+  30% {
+    stroke-width: 2;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .motion-sequence .sequence-node > rect {
+    animation: none !important;
+  }
+}
