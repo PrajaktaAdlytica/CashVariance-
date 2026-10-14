@@ -1,0 +1,322 @@
+{
+  "checks": [
+    {
+      "name": "Pinning fits 775",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 1",
+      "pass": true
+    },
+    {
+      "name": "775 panel 1 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 2",
+      "pass": true
+    },
+    {
+      "name": "775 panel 2 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 3",
+      "pass": true
+    },
+    {
+      "name": "775 panel 3 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 4",
+      "pass": true
+    },
+    {
+      "name": "775 panel 4 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 5",
+      "pass": true
+    },
+    {
+      "name": "775 panel 5 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 4",
+      "pass": true
+    },
+    {
+      "name": "775 panel 4 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 3",
+      "pass": true
+    },
+    {
+      "name": "775 panel 3 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 2",
+      "pass": true
+    },
+    {
+      "name": "775 panel 2 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 scroll selects 1",
+      "pass": true
+    },
+    {
+      "name": "775 panel 1 not clipped",
+      "pass": true
+    },
+    {
+      "name": "775 native wheel advances",
+      "pass": true
+    },
+    {
+      "name": "775 native wheel reverses",
+      "pass": true
+    },
+    {
+      "name": "775 direct click works",
+      "pass": true
+    },
+    {
+      "name": "775 keyboard navigation works",
+      "pass": true
+    },
+    {
+      "name": "775 no page overflow",
+      "pass": true
+    },
+    {
+      "name": "Pinning fits 1440",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 1",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 1 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 2",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 2 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 3",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 3 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 4",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 4 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 5",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 5 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 4",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 4 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 3",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 3 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 2",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 2 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 scroll selects 1",
+      "pass": true
+    },
+    {
+      "name": "1440 panel 1 not clipped",
+      "pass": true
+    },
+    {
+      "name": "1440 native wheel advances",
+      "pass": true
+    },
+    {
+      "name": "1440 native wheel reverses",
+      "pass": true
+    },
+    {
+      "name": "1440 direct click works",
+      "pass": true
+    },
+    {
+      "name": "1440 keyboard navigation works",
+      "pass": true
+    },
+    {
+      "name": "1440 no page overflow",
+      "pass": true
+    },
+    {
+      "name": "Pinning fits 390",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 1",
+      "pass": true
+    },
+    {
+      "name": "390 panel 1 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 2",
+      "pass": true
+    },
+    {
+      "name": "390 panel 2 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 3",
+      "pass": true
+    },
+    {
+      "name": "390 panel 3 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 4",
+      "pass": true
+    },
+    {
+      "name": "390 panel 4 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 5",
+      "pass": true
+    },
+    {
+      "name": "390 panel 5 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 4",
+      "pass": true
+    },
+    {
+      "name": "390 panel 4 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 3",
+      "pass": true
+    },
+    {
+      "name": "390 panel 3 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 2",
+      "pass": true
+    },
+    {
+      "name": "390 panel 2 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 scroll selects 1",
+      "pass": true
+    },
+    {
+      "name": "390 panel 1 not clipped",
+      "pass": true
+    },
+    {
+      "name": "390 native wheel advances",
+      "pass": true
+    },
+    {
+      "name": "390 native wheel reverses",
+      "pass": true
+    },
+    {
+      "name": "390 direct click works",
+      "pass": true
+    },
+    {
+      "name": "390 keyboard navigation works",
+      "pass": true
+    },
+    {
+      "name": "390 no page overflow",
+      "pass": true
+    },
+    {
+      "name": "Pinning fits 320",
+      "pass": true
+    },
+    {
+      "name": "320 direct click works",
+      "pass": true
+    },
+    {
+      "name": "320 keyboard navigation works",
+      "pass": true
+    },
+    {
+      "name": "320 no page overflow",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion selection works",
+      "pass": true
+    },
+    {
+      "name": "Reduced-motion progress is instant",
+      "pass": true
+    },
+    {
+      "name": "No JavaScript errors",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "passed": 79
+}

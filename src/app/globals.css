@@ -3601,3 +3601,39 @@ body[data-paused="true"] *:after,
     animation: none !important;
   }
 }
+
+/* Five native-scroll chapters; tabs remain a direct alternative. */
+.offer-scroll { position:relative; }
+.offer-scroll.is-pinned .offer-sticky { position:sticky; top:var(--offer-top,104px); }
+.offer-sticky { padding-bottom:4px; }
+.offer-scroll-caption { display:flex; justify-content:space-between; gap:20px; align-items:center; margin-bottom:10px; font:9px/1.5 var(--font-data); color:var(--muted); }
+.offer-count { font-size:15px; color:var(--ink); white-space:nowrap; }
+.offer-count>span { font-size:10px; color:var(--muted); }
+.offer-progress { height:2px; background:#e5ece7; margin-bottom:20px; }
+.offer-progress>span { display:block; height:100%; background:var(--action); transition:width .3s ease; }
+.offer-scroll .product-stage { height:580px; min-height:0; }
+.offer-scroll .product-list button { padding-top:23px; padding-bottom:23px; }
+.offer-scroll .product-stage .hero-art svg { max-height:300px; }
+@media(max-width:950px) and (min-width:681px) {
+  .offer-scroll .product-stage { padding:22px; }
+  .offer-scroll .product-stage-copy h3 { font-size:25px; }
+}
+@media(max-width:680px) {
+  .offer-scroll-caption { font-size:8px; gap:12px; }
+  .offer-progress { margin-bottom:14px; }
+  .offer-scroll .product-explorer { gap:12px; }
+  .offer-scroll .product-list { padding-bottom:6px; }
+  .offer-scroll .product-list button { padding:14px 12px; flex-basis:152px; }
+  .offer-scroll .product-list button div>span { display:none; }
+  .offer-scroll .product-list strong { font-size:21px; }
+  .offer-scroll .product-stage { height:540px; padding:20px; }
+  .offer-scroll .product-stage-copy h3 { font-size:26px; }
+  .offer-scroll .product-stage .hero-art { margin-top:12px; }
+  .offer-scroll .product-stage .hero-art svg { min-width:440px; max-height:270px; }
+}
+@media(prefers-reduced-motion:reduce) { .offer-progress>span { transition:none; } }
+
+@media(max-width:680px) {
+  .offer-scroll .product-stage .hero-art svg { height:210px; max-height:210px; }
+  .offer-scroll:not(.is-pinned) .product-stage { height:auto; min-height:540px; }
+}

@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { track } from "./Analytics";
-import { useContext, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
 import { products } from "@/data/products";
 import {
@@ -235,8 +235,59 @@ function Story() {
 export function ProductExplorer() {
   const [index, setIndex] = useState(0);
   const { paused } = useContext(MotionContext);
+  const rail = useRef<HTMLDivElement>(null);
+  const sticky = useRef<HTMLDivElement>(null);
+  const [pinned, setPinned] = useState(false);
+  const geometry = useRef({ top: 100, travel: 2000 });
+  useEffect(() => {
+    const outer = rail.current, inner = sticky.current;
+    if (!outer || !inner) return;
+    let frame = 0;
+    let enabled = false;
+    const update = () => {
+      frame = 0;
+      if (!enabled) return;
+      const distance = geometry.current.top - outer.getBoundingClientRect().top;
+      setIndex(Math.max(0, Math.min(4, Math.round(distance / geometry.current.travel * 4))));
+    };
+    const measure = () => {
+      const top = (document.querySelector('.site-header')?.getBoundingClientRect().height || 76) + 16;
+      const height = inner.getBoundingClientRect().height;
+      const travel = Math.max(360, window.innerHeight * .6) * 4;
+      enabled = height + top + 16 <= window.innerHeight;
+      geometry.current = { top, travel };
+      outer.style.setProperty('--offer-top', `${top}px`);
+      outer.style.height = enabled ? `${height + travel}px` : 'auto';
+      setPinned(enabled);
+      update();
+    };
+    const scroll = () => { if (!frame) frame = requestAnimationFrame(update); };
+    const observer = new ResizeObserver(measure);
+    observer.observe(inner);
+    window.addEventListener('resize', measure);
+    window.addEventListener('scroll', scroll, { passive:true });
+    measure();
+    return () => { observer.disconnect(); window.removeEventListener('resize', measure); window.removeEventListener('scroll', scroll); cancelAnimationFrame(frame); };
+  }, []);
+  function selectOffer(next: number) {
+    setIndex(next);
+    if (pinned && rail.current) {
+      const {top, travel} = geometry.current;
+      const start = window.scrollY + rail.current.getBoundingClientRect().top - top;
+      // Move the native page to the corresponding chapter; the pinned UI stays
+      // in place. No wheel/touch interception or forced smooth scrolling.
+      window.scrollTo({top: start + Math.max(1, Math.min(travel - 1, travel * next / 4)), behavior:'instant'});
+    }
+  }
   const p = products[index];
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
+  useEffect(() => {
+    const tab = refs.current[index], list = tab?.parentElement;
+    if (tab && list && list.scrollWidth > list.clientWidth) {
+      const left = list.scrollLeft + tab.getBoundingClientRect().left - list.getBoundingClientRect().left - (list.clientWidth - tab.clientWidth) / 2;
+      list.scrollTo({left, behavior:'instant'});
+    }
+  }, [index]);
   function key(e: React.KeyboardEvent, i: number) {
     let n = i;
     if (e.key === "ArrowDown" || e.key === "ArrowRight") n = (i + 1) % 5;
@@ -245,10 +296,14 @@ export function ProductExplorer() {
     else if (e.key === "End") n = 4;
     else return;
     e.preventDefault();
-    setIndex(n);
+    selectOffer(n);
     refs.current[n]?.focus();
   }
   return (
+    <div ref={rail} className={`offer-scroll ${pinned ? 'is-pinned' : ''}`}>
+      <div ref={sticky} className="offer-sticky">
+        <div className="offer-scroll-caption"><span>{pinned ? 'Scroll down to explore · Scroll up to revisit' : 'Choose a module to explore'}</span><span className="offer-count">0{index + 1}<span> / 05</span></span></div>
+        <div className="offer-progress" aria-hidden="true"><span style={{width:`${(index + 1) * 20}%`}}/></div>
     <div className="product-explorer">
       <div
         className="product-list"
@@ -269,7 +324,7 @@ export function ProductExplorer() {
             tabIndex={i === index ? 0 : -1}
             onKeyDown={(e) => key(e, i)}
             onClick={() => {
-              setIndex(i);
+              selectOffer(i);
               track("offer_16_selected", {
                 concept_id: 16,
                 selected_offer_id: prod.id,
@@ -313,6 +368,8 @@ export function ProductExplorer() {
             </div>
           </motion.div>
         </AnimatePresence>
+      </div>
+    </div>
       </div>
     </div>
   );

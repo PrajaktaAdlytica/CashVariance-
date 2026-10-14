@@ -28,3 +28,7 @@ Machine-readable evidence: `site-results.json` and `demo-results.json`. `example
 Added a persistent Sign in link to desktop/mobile navigation and the footer, and redesigned the concept access page. Replaced repeated cream backgrounds with white, sage, mineral grey, clay and forest chapters across all page families. Added staged animation to all 25 SVG compositions, plus the home position card, process, calendar, controls and demo position accents. Values never animate into different financial outcomes.
 
 The website suite still passes 94/94 checks and the demo suite 19/19. An additional 27/27 targeted checks verify Sign in and navigation at 320, 390, 768, 1024, 1200 and 1440px, actual sequence progression, opaque diagram labels, offscreen/global pause, reduced-motion still states, section color variety and no browser errors. See `visual-update-results.json`.
+
+## Scroll-driven offer selection
+
+The five-offer explorer pins only when its full content fits beneath the header. Native page scrolling selects 01 through 05 and reverses on upward scrolling. Clicking a tab or using arrow/Home/End keys moves directly to its chapter. Mobile selection keeps the active tab in view. Short viewports use the complete unpinned tab interface, and reduced motion removes transitions without removing access to any offer. See `offers-scroll-results.json` for focused tests at the marked 775×804 viewport, desktop and mobile sizes.

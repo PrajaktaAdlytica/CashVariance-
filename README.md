@@ -61,3 +61,5 @@ Fonts and source artwork attribution are in `ASSET-LICENSES.txt`. Keep the font 
 ## Verification
 
 Production build and TypeScript pass. Browser checks cover 25 routes at desktop, tablet and mobile sizes, interactions, synthetic demo state transitions and reduced motion. See `qa/QA-REPORT.md` and the JSON result files. These checks are not a claim of WCAG certification or a production security audit.
+
+The five-offer section uses native scroll chapters: scrolling down selects 01–05; scrolling up reverses the sequence. The explorer stays pinned when it fits the viewport. Direct tabs and keyboard navigation remain available, with an unpinned layout on short screens.
