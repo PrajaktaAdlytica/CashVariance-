@@ -1,0 +1,34 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/0_dsmu02odtdi.js"
+3:"/_next/static/chunks/348ao7m5d6w0k.js"
+4:"/_next/static/chunks/0s0cbu9h8o-_1.js"
+5:I[60336,["$2","$3","$4"],"MotionProvider"]
+6:I[86402,["$2","$3"],"RouteEvents"]
+7:I[4121,["$2","$3"],"Header"]
+8:I[39756,["$2","$3"],"default"]
+9:I[37457,["$2","$3"],"default"]
+a:I[60336,["$2","$3","$4"],"Eyebrow"]
+b:I[60336,["$2","$3","$4"],"HeroArt"]
+c:I[60336,["$2","$3","$4"],"Button"]
+d:I[4121,["$2","$3"],"Footer"]
+12:I[97367,["$2","$3"],"OutletBoundary"]
+13:"$Sreact.suspense"
+15:"ViewportBoundary"
+16:I[97367,["$2","$3"],"$15"]
+18:"MetadataBoundary"
+19:I[97367,["$2","$3"],"$18"]
+1b:I[68027,["$2","$3"],"default",1]
+:HL["/_next/static/chunks/3bpsnwc4_qp44.css","style"]
+:HL["/_next/static/chunks/33hwbe4v28zf4.css","style"]
+f:X
+10:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$L11",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/33hwbe4v28zf4.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0s0cbu9h8o-_1.js","async":true,"nonce":"$undefined"}]],["$","$L12",null,{"children":["$","$13",null,{"name":"Next.MetadataOutlet","children":"$@14"}]}]]}],"p":false,"v":null}}]]
+e:[["children",{"s":{"n":"slug","t":"c","k":"sign-in","s":[]},"h":66048,"d":{"r":["$","$1","c",{"children":[null,["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$f"},"c":"$Q10"}]]
+0:{"P":null,"c":["","sign-in",""],"q":"","i":false,"t":{"t":{"s":"","h":131600,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bpsnwc4_qp44.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0_dsmu02odtdi.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/348ao7m5d6w0k.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L5",null,{"children":[["$","$L6",null,{}],["$","$L7",null,{}],["$","main",null,{"id":"main","children":["$","$L8",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"className":"not-found","children":[["$","div",null,{"style":{"display":"flex","justifyContent":"center"},"children":["$","$La",null,{"children":"404 / An open path"}]}],["$","h1",null,{"children":["This path is",["$","br",null,{}],"still unresolved."]}],["$","div",null,{"style":{"maxWidth":500,"margin":"25px auto"},"children":["$","$Lb",null,{"name":"404"}]}],["$","p",null,{"children":"Return to the overview or inspect a different kind of exception."}],["$","$Lc",null,{"href":"/","children":"Return home"}],["$","$Lc",null,{"href":"/demo","secondary":true,"children":"Explore the demo"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Ld",null,{}]]}]}]}]]}],"p":false,"v":null},"c":"$Qe"},"h":{"r":["$","$1","h",{"children":[null,["$","$L16",null,{"children":"$L17"}],["$","$L19",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$13",null,{"name":"Next.Metadata","children":"$L1a"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$1b",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bpsnwc4_qp44.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"wce7bMJCMixGM6b69C6lZ"}
+1c:I[22016,["$2","$3","$4"],""]
+:HL["/brand/logo/symbol-ink.svg","image"]
+f:C
+11:["$","section",null,{"className":"access-page","children":[["$","div",null,{"className":"access-illustration theme-forest","children":[["$","div",null,{"children":[["$","$La",null,{"children":"Evidence before action"}],["$","h2",null,{"children":["Every decision",["$","br",null,{}],"starts with clarity."]}]]}],["$","$Lb",null,{"name":"sign-in"}],["$","p",null,{"children":"A read-only concept. Human authority throughout."}]]}],["$","div",null,{"className":"access-card","children":[["$","img",null,{"className":"rise","src":"/brand/logo/symbol-ink.svg","alt":"CashVariance symbol"}],["$","$La",null,{"children":"Sign in / Concept preview"}],["$","h1",null,{"children":["Welcome to",["$","br",null,{}],"CashVariance."]}],["$","p",null,{"children":"Customer accounts are not available. Explore the synthetic workflow without entering credentials."}],["$","$Lc",null,{"href":"/demo","children":"Enter synthetic demo"}],["$","$L1c",null,{"href":"/request-demo","className":"text-link","children":"Request a guided walkthrough ↗"}],["$","p",null,{"className":"small-note","children":"No credentials collected · No production sign-in"}]]}]]}]
+17:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1d:I[27201,["$2","$3"],"IconMark"]
+14:null
+1a:[["$","title","0",{"children":"Concept preview access | CashVariance"}],["$","meta","1",{"name":"description","content":"Explore the CashVariance treasury exception review concept."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","meta","3",{"property":"og:title","content":"CashVariance — Explain the difference"}],["$","meta","4",{"property":"og:description","content":"Treasury exception review. Evidence before action."}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"CashVariance — Explain the difference"}],["$","meta","8",{"name":"twitter:description","content":"Treasury exception review. Evidence before action."}],["$","link","9",{"rel":"icon","href":"/brand/favicon/favicon.svg","type":"image/svg+xml"}],["$","link","10",{"rel":"icon","href":"/brand/favicon/favicon-32.png","sizes":"32x32"}],["$","link","11",{"rel":"apple-touch-icon","href":"/brand/favicon/apple-touch-icon.png"}],["$","$L1d","12",{}]]

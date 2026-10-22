@@ -1,0 +1,4 @@
+# CashVariance static Next.js export. No Node.js process required.
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html

@@ -1,0 +1,29 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/0_dsmu02odtdi.js"
+3:"/_next/static/chunks/348ao7m5d6w0k.js"
+4:I[60336,["$2","$3"],"MotionProvider"]
+5:I[86402,["$2","$3"],"RouteEvents"]
+6:I[4121,["$2","$3"],"Header"]
+7:I[39756,["$2","$3"],"default"]
+8:I[37457,["$2","$3"],"default"]
+9:I[60336,["$2","$3"],"Eyebrow"]
+a:I[60336,["$2","$3"],"HeroArt"]
+b:I[60336,["$2","$3"],"Button"]
+c:I[4121,["$2","$3"],"Footer"]
+10:I[97367,["$2","$3"],"OutletBoundary"]
+11:"$Sreact.suspense"
+13:"ViewportBoundary"
+14:I[97367,["$2","$3"],"$13"]
+16:"MetadataBoundary"
+17:I[97367,["$2","$3"],"$16"]
+19:I[68027,["$2","$3"],"default",1]
+:HL["/_next/static/chunks/3bpsnwc4_qp44.css","style"]
+e:X
+f:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[["$","section",null,{"className":"not-found","children":[["$","div",null,{"style":{"display":"flex","justifyContent":"center"},"children":["$","$L9",null,{"children":"404 / An open path"}]}],["$","h1",null,{"children":["This path is",["$","br",null,{}],"still unresolved."]}],["$","div",null,{"style":{"maxWidth":500,"margin":"25px auto"},"children":["$","$La",null,{"name":"404"}]}],["$","p",null,{"children":"Return to the overview or inspect a different kind of exception."}],["$","$Lb",null,{"href":"/","children":"Return home"}],["$","$Lb",null,{"href":"/demo","secondary":true,"children":"Explore the demo"}]]}],null,["$","$L10",null,{"children":["$","$11",null,{"name":"Next.MetadataOutlet","children":"$@12"}]}]]}],"p":false,"v":null}}]]
+d:[["children",{"s":"/_not-found","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$e"},"c":"$Qf"}]]
+0:{"P":null,"c":["","_not-found",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bpsnwc4_qp44.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0_dsmu02odtdi.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/348ao7m5d6w0k.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","main",null,{"id":"main","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"className":"not-found","children":[["$","div",null,{"style":{"display":"flex","justifyContent":"center"},"children":["$","$L9",null,{"children":"404 / An open path"}]}],["$","h1",null,{"children":["This path is",["$","br",null,{}],"still unresolved."]}],["$","div",null,{"style":{"maxWidth":500,"margin":"25px auto"},"children":["$","$La",null,{"name":"404"}]}],["$","p",null,{"children":"Return to the overview or inspect a different kind of exception."}],["$","$Lb",null,{"href":"/","children":"Return home"}],["$","$Lb",null,{"href":"/demo","secondary":true,"children":"Explore the demo"}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","$Lc",null,{}]]}]}]}]]}],"p":false,"v":null},"c":"$Qd"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L14",null,{"children":"$L15"}],["$","$L17",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$11",null,{"name":"Next.Metadata","children":"$L18"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$19",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bpsnwc4_qp44.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"wce7bMJCMixGM6b69C6lZ"}
+e:C
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1a:I[27201,["$2","$3"],"IconMark"]
+12:null
+18:[["$","title","0",{"children":"CashVariance — Explain the difference"}],["$","meta","1",{"name":"description","content":"A proposed treasury review workspace for daily bank-to-GL exceptions, dated evidence and human decisions. Explore the synthetic concept."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","meta","3",{"property":"og:title","content":"CashVariance — Explain the difference"}],["$","meta","4",{"property":"og:description","content":"Treasury exception review. Evidence before action."}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"CashVariance — Explain the difference"}],["$","meta","8",{"name":"twitter:description","content":"Treasury exception review. Evidence before action."}],["$","link","9",{"rel":"icon","href":"/brand/favicon/favicon.svg","type":"image/svg+xml"}],["$","link","10",{"rel":"icon","href":"/brand/favicon/favicon-32.png","sizes":"32x32"}],["$","link","11",{"rel":"apple-touch-icon","href":"/brand/favicon/apple-touch-icon.png"}],["$","$L1a","12",{}]]

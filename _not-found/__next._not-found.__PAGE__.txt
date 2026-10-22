@@ -1,0 +1,35 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/0_dsmu02odtdi.js"
+3:"/_next/static/chunks/348ao7m5d6w0k.js"
+4:I[60336,["$2","$3"],"MotionProvider"]
+5:I[86402,["$2","$3"],"RouteEvents"]
+6:I[4121,["$2","$3"],"Header"]
+7:I[39756,["$2","$3"],"default"]
+8:I[37457,["$2","$3"],"default"]
+9:I[60336,["$2","$3"],"Eyebrow"]
+a:I[60336,["$2","$3"],"HeroArt"]
+b:I[60336,["$2","$3"],"Button"]
+c:I[4121,["$2","$3"],"Footer"]
+13:I[97367,["$2","$3"],"OutletBoundary"]
+14:"$Sreact.suspense"
+17:"ViewportBoundary"
+18:I[97367,["$2","$3"],"$17"]
+19:"MetadataBoundary"
+1a:I[97367,["$2","$3"],"$19"]
+1b:I[27201,["$2","$3"],"IconMark"]
+:HL["/_next/static/chunks/3bpsnwc4_qp44.css","style"]
+e:X
+11:X
+11:C
+12:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","section",null,{"className":"not-found","children":[["$","div",null,{"style":{"display":"flex","justifyContent":"center"},"children":["$","$L9",null,{"children":"404 / An open path"}]}],["$","h1",null,{"children":["This path is",["$","br",null,{}],"still unresolved."]}],["$","div",null,{"style":{"maxWidth":500,"margin":"25px auto"},"children":["$","$La",null,{"name":"404"}]}],["$","p",null,{"children":"Return to the overview or inspect a different kind of exception."}],["$","$Lb",null,{"href":"/","children":"Return home"}],["$","$Lb",null,{"href":"/demo","secondary":true,"children":"Explore the demo"}]]}],null,["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}],"p":"$@16","v":null,"s":"$e"}}]]
+f:[["children",{"s":"/_not-found","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}]}]]}],"p":"$@10","v":"$11","s":"$e"},"c":"$Q12"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3bpsnwc4_qp44.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0_dsmu02odtdi.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/348ao7m5d6w0k.js","async":true}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L4",null,{"children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","main",null,{"id":"main","children":["$","$L7",null,{"parallelRouterKey":"children","template":["$","$L8",null,{}],"notFound":[["$","section",null,{"className":"not-found","children":[["$","div",null,{"style":{"display":"flex","justifyContent":"center"},"children":["$","$L9",null,{"children":"404 / An open path"}]}],["$","h1",null,{"children":["This path is",["$","br",null,{}],"still unresolved."]}],["$","div",null,{"style":{"maxWidth":500,"margin":"25px auto"},"children":["$","$La",null,{"name":"404"}]}],["$","p",null,{"children":"Return to the overview or inspect a different kind of exception."}],["$","$Lb",null,{"href":"/","children":"Return home"}],["$","$Lb",null,{"href":"/demo","secondary":true,"children":"Explore the demo"}]]}],[]]}]}],["$","$Lc",null,{}]]}]}]}]]}],"p":"$@d","v":null,"s":"$e"},"c":"$Qf"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L18",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1a",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$14",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"CashVariance — Explain the difference"}],["$","meta","1",{"name":"description","content":"A proposed treasury review workspace for daily bank-to-GL exceptions, dated evidence and human decisions. Explore the synthetic concept."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","meta","3",{"property":"og:title","content":"CashVariance — Explain the difference"}],["$","meta","4",{"property":"og:description","content":"Treasury exception review. Evidence before action."}],["$","meta","5",{"property":"og:type","content":"website"}],["$","meta","6",{"name":"twitter:card","content":"summary"}],["$","meta","7",{"name":"twitter:title","content":"CashVariance — Explain the difference"}],["$","meta","8",{"name":"twitter:description","content":"Treasury exception review. Evidence before action."}],["$","link","9",{"rel":"icon","href":"/brand/favicon/favicon.svg","type":"image/svg+xml"}],["$","link","10",{"rel":"icon","href":"/brand/favicon/favicon-32.png","sizes":"32x32"}],["$","link","11",{"rel":"apple-touch-icon","href":"/brand/favicon/apple-touch-icon.png"}],["$","$L1b","12",{}]]}]}],null]}],null]}],"p":"$@1c","v":null,"s":"$e"}},"a":"$@1d","u":"$@1e","b":"wce7bMJCMixGM6b69C6lZ"}
+15:null
+e:300
+1e:true
+e:C
+1d:0
+10:"$undefined"
+d:"$undefined"
+1c:"$undefined"
+16:"$undefined"
